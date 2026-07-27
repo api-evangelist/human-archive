@@ -1,8 +1,24 @@
 aid: human-archive
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/human-archive.png
 name: Human Archive
-description: Human Archive is a company surfaced as a portfolio company of wing-venture-capital, y-combinator
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Human Archive is a Stanford- and Berkeley-founded, Y Combinator-funded data lab building
+  foundational multimodal datasets for training AI and robotics systems to understand human movement and
+  interaction. It collects and labels first-person video, RGB-D, audio, tactile, and motion-capture data
+  from a network of 100,000+ contributors and 500+ industry partners, and provides dataset access to
+  researchers and enterprise partners through a customer dashboard on request. The company is a B2B data
+  infrastructure provider rather than a self-serve platform, and does not publish a public developer API,
+  SDKs, or developer documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/human-archive/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Data
+- Artificial Intelligence
+- Machine Learning
+- Datasets
+- Robotics
+- Multimodal
+- Data Labeling
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/human-archive-domain-security.yml
 - type: Website
   url: https://www.humanarchive.ai/
+- type: TermsOfService
+  url: https://www.humanarchive.ai/terms.html
+- type: PrivacyPolicy
+  url: https://www.humanarchive.ai/privacy.html
+- type: Support
+  url: https://www.humanarchive.ai/contact.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
